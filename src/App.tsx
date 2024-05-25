@@ -1,6 +1,6 @@
 import './App.css'
-import CompletedTodoList from "./components/TodoList/CompletedTodoList";
-import TodoList from "./components/TodoList/TodoList";
+import CompletedTodoListItem from "./components/TodoList/CompletedTodoListItem";
+import TodoListItem from "./components/TodoList/TodoListItem";
 
 function App() {
   return (
@@ -23,17 +23,13 @@ function App() {
           <div>
             <h2 className="input-label">Todo List</h2>
             <div className="flex flex-col gap-2 mt-2 p-2">
-              <TodoList />
-              <TodoList />
-              <TodoList />
-              <TodoList />
-              <TodoList />
+              <TodoListItem />
             </div>
           </div>
           <div>
             <h2 className="input-label">Completed</h2>
             <div className="flex flex-col gap-2 mt-2 p-2">
-              <CompletedTodoList />
+              <CompletedTodoListItem />
             </div>
           </div>
         </div>
