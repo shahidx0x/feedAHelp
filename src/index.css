@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input-label{
+  @apply text-xl font-bold font-mono p-2 border-b-2 pb-2
+}
+.input-button{
+  @apply p-3 border-r border-t border-b bg-green-300 rounded-e-md text-gray-500 font-bold
+}
+.input-field{
+  @apply p-3 rounded-s-md border w-full
+}
+.edit-input{
+  @apply focus:outline-none border-b-2
+}
+
