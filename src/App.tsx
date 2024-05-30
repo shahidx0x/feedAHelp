@@ -2,10 +2,11 @@ import { useRef } from "react";
 import "./App.css";
 import TodoListItem from "./components/TodoList/TodoListItem";
 import { useTodoContext } from "./contexts/TodoContext";
-import { Todo } from "./types/todo.types";
+import { Todo, TodoContextProps } from "./types/todo.types";
 
 function App() {
-  const { todos, addTodo, updateTodo, deleteTodo } = useTodoContext();
+  const { todos, addTodo, updateTodo, deleteTodo } =
+    useTodoContext() as TodoContextProps;
   const inputRef = useRef<HTMLInputElement>(null);
   const handleAddTodo = () => {
     if (inputRef.current?.value) {
