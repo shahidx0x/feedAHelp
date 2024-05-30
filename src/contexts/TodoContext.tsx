@@ -1,13 +1,8 @@
 import React, { ReactNode, createContext, useContext } from "react";
-import { Todo } from "../types/todo.types";
+import { TodoContextProps } from "../types/todo.types";
 import { useTodos } from "../hooks/useTodos";
 
-interface TodoContextProps {
-  todos: Todo[];
-  addTodo: (text: string) => void;
-  updateTodo: (id: number) => void;
-  deleteTodo: (id: number) => void;
-}
+
 
 const TodoContext = createContext<TodoContextProps | undefined>(undefined);
 

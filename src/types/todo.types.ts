@@ -3,3 +3,9 @@ export interface Todo {
   text: string;
   completed: boolean;
 }
+export interface TodoContextProps {
+  todos: Todo[];
+  addTodo: (text: string) => void;
+  updateTodo: (id: number) => void;
+  deleteTodo: (id: number) => void;
+}
